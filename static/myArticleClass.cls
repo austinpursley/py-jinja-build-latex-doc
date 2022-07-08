@@ -15,9 +15,9 @@
 \RequirePackage[margin=1in, inner=1in, outer=1in, hmarginratio=1:1, paperwidth=8.5in, paperheight=11in, includefoot]{geometry}
 \RequirePackage[utf8]{inputenc}
 \RequirePackage[pdftex]{graphicx}
-\RequirePackage{fancyhdr}
+\usepackage{fancyhdr}
 \RequirePackage[toc,page,title,titletoc]{appendix}
-\RequirePackage{array}
+\usepackage{array}
 \RequirePackage{import}
 \RequirePackage[subpreambles]{standalone}
 
@@ -44,5 +44,5 @@
 %========================================================
 % References / Bibliography
 %========================================================
-\RequirePackage[style=numeric,giveninits=true,sorting=none]{biblatex}% "style=numeric" is default
+\usepackage[style=numeric,giveninits=true,sorting=none]{biblatex}% "style=numeric" is default
 \addbibresource{Resources/References.bib} % bib style

@@ -1,0 +1,18 @@
+out_dir: out_doc_1/
+static_dir: static/
+templates_dir: templates/
+template_main: main.tex
+template_sub: sub.tex
+doc_title: Generic Test Document
+Sections:
+  - Hipster Ipsum
+  - Taco Wayfarers:
+    - Hammock Readymade
+    - Single-Origin Coloring Book:
+      - VHS
+      - Post-ironic Slow-carb
+      - Copper Mug Yes Plz
+Appendices:
+  - Banjo Greenjuice
+  - Roof Bar Chia Seeds
+  - Mumblecore Distillery

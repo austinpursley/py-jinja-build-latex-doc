@@ -1,0 +1,31 @@
+\documentclass[class=myArticleClass, float=false, crop=false]{standalone}
+\begin{document}
+
+%==================================================================
+%==================================================================
+%  {{ title | upper}}
+%==================================================================
+%==================================================================
+{%- set title = "{" ~ title ~ "}" -%}
+{%- set label = "{" ~ label ~ "}" %}
+\section{{ title }}
+\label{{ label }}
+
+{% for s in subsection %}
+{%- set title = "{" ~ s.title ~ "}" -%}
+{%- set label = "{" ~ s.label ~ "}" %}
+%==========================================================
+%==========================================================
+\subsection{{ title }}
+\label{{ label }}
+{% for ss in s.subsection %}
+{%- set title = "{" ~ ss.title ~ "}" -%}
+{% set label = "{" ~ ss.label ~ "}" %}
+%--------------------------------------
+%--------------------------------------
+\subsubsection{{ title }}
+\label{{ label }}
+% SOURCE:
+{% endfor %}
+{% endfor %}
+\end{document}
